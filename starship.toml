@@ -16,8 +16,21 @@ success_symbol = '[➜](bold green)'
 [git_branch]
 format = '[$symbol$branch(:$remote_branch)]($style) '
 
+[git_status]
+format = '([$all_status$ahead_behind]($style) )'
+
+[git_state]
+format = '[\($state( $progress_current of $progress_total)\)]($style) '
+
+[git_commit]
+format = '[\($hash$tag\)]($style) '
+
+[git_metrics]
+disabled = true
+
+
 [aws]
-format = '[$symbol(profile: "$profile" )(\(region: $region\) )]($style)'
+format = '[$symbol(profile: "$profile" )]($style)'
 disabled = false
 style = 'bold blue'
 symbol = " "
@@ -41,6 +54,12 @@ disabled = true
 disabled = true
 
 [username]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[env_var]
 disabled = true
 
 [palettes.catppuccin_mocha]
